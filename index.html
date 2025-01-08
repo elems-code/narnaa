@@ -1,36 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Test</title>
+    <title>ByMax Роботын Танилцуулга</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #3e8e41, #76c7a1);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Section styling */
+        section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #333;
+            border-bottom: 2px solid #3e8e41;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #555;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 16px;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: '\2022';
+            font-size: 30px;
+            color: #76c7a1;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Image Styling */
+        .robot-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #76c7a1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            section {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Simple Web Page</h1>
-    <p>This is a test of basic HTML structure.</p>
-    
-    <h2>Test List:</h2>
-    <ul>
-        <li>HTML Structure</li>
-        <li>Headings and Paragraphs</li>
-        <li>Unordered Lists</li>
-    </ul>
+    <!-- Header Section -->
+    <header>
+        <h1>ByMax Роботын Танилцуулга</h1>
+        <p>Технологийн ирээдүй, хүний амьдралыг хөнгөвчлөх шинэ үеийн робот</p>
+    </header>
 
-    <h3>Test Link:</h3>
-    <a href="https://www.example.com" target="_blank">Go to Example</a>
+    <!-- Main Content Section -->
+    <section>
+        <h2>ByMax Роботын Тодорхойлолт</h2>
+        <p>ByMax робот нь хиймэл оюун ухаан бүхий, өндөр хүчин чадалтай автомат төхөөрөмж бөгөөд амьдралыг хөнгөвчлөх, өдөр тутмын ажлуудыг илүү хялбаршуулдаг. Энэхүү робот нь хүний амьдралд орж, бүх төрлийн мэдээлэл боловсруулалт, харилцан яриа, болон гэрийн ажил үүргийг гүйцэтгэх чадвартай.</p>
 
-    <h3>Test Image:</h3>
-    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        <h3>Үндсэн Онцлог Шинжүүд</h3>
+        <ul>
+            <li>Хиймэл оюун ухаан бүхий мэдрэмжийн систем</li>
+            <li>Өдөр тутмын ажил үүргийг хөнгөвчлөх програмчлал</li>
+            <li>Олон хэл дээрх харилцан яриа</li>
+            <li>Өндөр хурдтай мэдээлэл боловсруулах чадвар</li>
+            <li>Аюулгүй байдлын системүүд</li>
+        </ul>
 
-    <h3>Test Form:</h3>
-    <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <h3>Техникийн Тодорхойлолт</h3>
+        <ul>
+            <li>Процессор: Intel Core i7</li>
+            <li>Хуулбар: 16GB RAM</li>
+            <li>Хадгалах: 1TB SSD</li>
+            <li>Үйлдлийн систем: Linux-based AI software</li>
+        </ul>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <h3>ByMax Роботын Зорилго</h3>
+        <p>ByMax роботыг амьдралыг хөнгөвчлөх, хүмүүсийн өдөр тутмын үүргийг автоматжуулах, мөн нийгэмд хувь нэмэр оруулах зорилгоор бүтээсэн. Тус робот нь гэрийн ажил үүргийг хөнгөвчлөх, оффисын ажиллагааг сайжруулах, бизнесийн салбарт ч амжилттай ашиглагдаж байна.</p>
 
-        <button type="submit">Submit</button>
-    </form>
+        <h3>Зураг</h3>
+        <img src="https://via.placeholder.com/600" alt="ByMax Robot" class="robot-image">
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 ByMax Robotics | <a href="https://www.bymaxrobotics.com" target="_blank">Албан ёсны вэб сайт</a></p>
+    </footer>
 </body>
 </html>
